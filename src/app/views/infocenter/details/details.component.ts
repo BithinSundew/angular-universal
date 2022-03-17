@@ -30,11 +30,11 @@ constructor(private sharedService: SharedService,
 
   getUserDetails() {
 
-    let url =`photos/${this.activeId}` ;
+    let url =`comments?id=${this.activeId}` ;
   this.webService.get(url).subscribe((response: any) => {
     //  this.spinnerService.hide();
     // if (response.status == 1) {
-    this.albumDetails = response;
+    this.albumDetails = response[0];
     // }
 
   }, (error:any) => {

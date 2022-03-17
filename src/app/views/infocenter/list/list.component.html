@@ -2,16 +2,16 @@
   <table class="table table-bordered table-hover">
     <thead>
       <tr>
-        <th>#</th>
         <th>Id</th>
-        <th>Title</th>
+        <th>Name</th>
+        <th>Email</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let item of albumList">
-        <td><img [src]="item.thumbnailUrl" width="40" /></td>
         <td>{{ item.id }}</td>
-        <td>{{ item.title }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.email }}</td>
         <td>
           <button type="button" class="btn btn-sm btn-primary" (click)="viewDetails(item)">Details</button>
         </td>

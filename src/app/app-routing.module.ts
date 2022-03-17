@@ -4,6 +4,11 @@ import { DefaultLayoutComponent } from './default-layout/default-layout.componen
 const routes: Routes = [
   {
     path: '',
+    redirectTo: 'infocenter',
+    pathMatch: 'full',
+  },
+  {
+    path: '',
     component: DefaultLayoutComponent,
     data: {
       title: 'Home'

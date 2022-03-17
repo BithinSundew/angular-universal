@@ -27,7 +27,7 @@ albumList:any=[];
 
   getUserList() {
 
-      let url ='photos' ;
+      let url ='comments' ;
     this.webService.get(url).subscribe((response: any) => {
       //  this.spinnerService.hide();
       // if (response.status == 1) {
